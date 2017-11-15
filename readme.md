@@ -6,10 +6,10 @@ Today we've made a command line Application using php. Which will generate our m
 ## documentation for mvc.php file.
 mvc.php is a command line Application. Which actually help you to bootstrap your php project quicker.    
 first download mvc.php file from github. Make a folder and keep `mvc.php` file in this folder. open this folder in your terminal.   
-* To bootstrap  your project command will be `php mvc.php`.
-* To create a route command will be `php mvc.php r:<routeName>`
-* To create a view command will be `php mvc.php v:<routeName>`
-* To create a controller command will be `php mvc.php c:<routeName>`
+* To bootstrap  your project, command will be `php mvc.php`
+* To create a route, command will be `php mvc.php r:<routeName>`
+* To create a view, command will be `php mvc.php v:<routeName>`
+* To create a controller, command will be `php mvc.php c:<routeName>`
 * To create a route, view and controller command will be `php mvc.php rvc:<routeName>`   
 Hope it will help you much in your future. 
 
@@ -40,7 +40,7 @@ $friends1 = $friends[0];
 $friends2 = $friends[1];
 $friends3 = $friends[2];
 ~~~
-we make assign 3 variable 3 separate line. We can do things in one line using `list` function.
+we assign 3 variable 3 separate line. We can do things in one line using `list` function.
 ~~~php
 $friends = ['sumon', 'sarwar', 'tanim'];
 list($friends1, $friends2, $friends3) = $friends;
@@ -55,9 +55,9 @@ TEXT;
 Here we keep `TEXT` as identifier. You can write anything as identifier. 
 ~~~php
 $name = 'Shibu deb polo';
-$content = <<<ANYTHING
+$content = <<<BANGLADESH
 Hello, my name is $name.
-ANYTHING;
+BANGLADESH;
 // output will be 
 Hello, my name is Shibu deb polo.
 ~~~
@@ -66,9 +66,9 @@ Nowdoc and heredoc more or less same only different is nowdoc not support string
 
 ~~~php
 $name = 'Shibu deb polo';
-$content = <<<'ANYTHING'
+$content = <<<'BANGLADESH'
 Hello, my name is $name.
-ANYTHING;
+BANGLADESH;
 // output will be 
 Hello, my name is $name.
 ~~~
@@ -80,7 +80,7 @@ File handling in php is very easy. It has very easy syntax for manipulating file
 * close this file
 
 ### file open
-in php to open file we use `fopen`. which takes 2 arguments. first argument is, which file I want to open. 2nd argument is, what is the reason behind for opening this file. say we open file for reading we will give `r`. If we open file for writing we will give `w`. If we open file for appending new line we will give `w`. If the file you want to open is not exists it will create this file and open it for you.
+In php, to open file we use `fopen`. which takes 2 arguments. first argument is, which file I want to open. 2nd argument is, what is the reason behind for opening this file. say we open file for reading we will give `r`. If we open file for writing we will give `w`. If we open file for appending new line we will give `w`. If the file you want to open is not exists, it will create this file and open it for you.
 ~~~php
 $file = fopen('hello.txt', 'w');
 ~~~
